@@ -1,0 +1,13 @@
+$main-color: #4eddff;
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 100vh;
+
+  img {
+    width: 50%;
+  }
+}
