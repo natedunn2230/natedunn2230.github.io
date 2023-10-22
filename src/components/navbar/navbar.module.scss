@@ -1,11 +1,31 @@
 .navbar {
     display: flex;
-    // align-content: flex-end;
-    background-color: var(--color-secondary);
-    height: 56px;
+    justify-content: space-between;
+    height: 50px;
     align-items: center;
 
     .link {
-        margin: 0 8px;
+        display: flex;
+        align-items: center;
+        padding: 0px 24px;
+
+        &:hover:not(.linkSelected) {
+            color: var(--color-grey);
+            transition: color 100ms ease-in;
+        }
+    }
+
+    .links {
+        height: 100%;
+        display: flex;
+    }
+
+    .linkSelected {
+        @extend .link;
+        background-color: var(--color-primary);
+        
+        &:active {
+            transition: background-color 1200ms ease-in;
+        }
     }
 }

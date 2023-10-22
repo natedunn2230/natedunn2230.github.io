@@ -1,7 +1,7 @@
-/** All fonts are defined here **/
+/** All fonts and typography are defined here **/
 
 :root {
-    --font-small: 13px;
+    --font-small: 12px;
     --font-default: 16px;
     --font-large: 24px;
     --font-xLarge: 32px;   
