@@ -1,0 +1,11 @@
+.navbar {
+    display: flex;
+    // align-content: flex-end;
+    background-color: var(--color-secondary);
+    height: 56px;
+    align-items: center;
+
+    .link {
+        margin: 0 8px;
+    }
+}
