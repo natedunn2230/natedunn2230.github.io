@@ -1,8 +1,10 @@
 /** All Colors are defined here **/
 :root {
-    --color-primary: #4955ff;
-    --color-secondary: #ff7c72;
-    --color-white: #f7f4f4;
-    --color-grey: #bbb7b7;
-    --color-black: #252525;
+  --color-primary: #4955ff;
+  --color-secondary: #ff7c72;
+  --color-secondary-dark: #c8625b;
+  --color-white: #f7f4f4;
+  --color-grey: #bbb7b7;
+  --color-grey-dark: #333333;
+  --color-black: #252525;
 }

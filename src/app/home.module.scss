@@ -1,7 +1,48 @@
-.background {
-    background-color: var(--color-secondary);
+.name {
+  color: var(--color-secondary);
 }
 
-.welcome-box {
-    display: flex;
+.welcomeBox {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.welcomeText {
+  max-width: 500px;
+  margin-bottom: 24px;
+
+  h1 {
+    text-align: center;
+  }
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.buttonWrapper {
+  display: flex;
+  margin: 16px 0;
+  justify-content: center;
+  animation-name: fadeInButton;
+}
+
+.profilePicture {
+  max-width: 33%;
+  min-width: 225px;
+  width: auto;
+  height: auto;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }

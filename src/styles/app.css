@@ -2,6 +2,7 @@
 
 @import "./colors.css";
 @import "./fonts.css";
+@import "./components.css";
 
 html,
 body {
@@ -9,7 +10,7 @@ body {
   margin: 0px;
   font-size: var(--font-default);
   height: 100%;
-  background: var(--color-black);
+  background: var(--color-grey-dark);
   color: var(--color-white);
 }
 
@@ -25,8 +26,15 @@ a {
 .app {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .page-content {
-  padding: 8px;
+  flex: 1 1 auto;
+  padding: 12px;
+  overflow: scroll;
+}
+
+.flex {
+  display: flex;
 }
