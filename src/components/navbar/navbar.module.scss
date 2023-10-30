@@ -1,8 +1,8 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  height: 50px;
-  padding: 0 12px;
+  height: 56px;
+  padding: 0 8px 0 16px;
   align-items: center;
   background-color: var(--color-black);
 
@@ -18,9 +18,8 @@
   }
 
   .icon {
-    width: 130px;
-    margin-top: 8px;
-    margin-left: 8px;
+    width: 35px;
+    height: 35px;
   }
 
   .links {
@@ -39,11 +38,6 @@
 
   .hamburger {
     display: none;
-
-    &:hover {
-      cursor: pointer;
-      opacity: 0.7;
-    }
   }
 }
 

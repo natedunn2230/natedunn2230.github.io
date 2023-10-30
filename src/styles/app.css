@@ -31,10 +31,21 @@ a {
 
 .page-content {
   flex: 1 1 auto;
-  padding: 12px;
+  padding: 16px;
   overflow: scroll;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 
 .flex {
   display: flex;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }

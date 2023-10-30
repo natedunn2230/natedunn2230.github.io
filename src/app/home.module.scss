@@ -18,31 +18,17 @@
   h1 {
     text-align: center;
   }
-  animation-name: fadeIn;
-  animation-duration: 1.5s;
 }
 
 .buttonWrapper {
   display: flex;
   margin: 16px 0;
   justify-content: center;
-  animation-name: fadeInButton;
 }
 
 .profilePicture {
-  max-width: 33%;
+  max-width: 40%;
   min-width: 225px;
   width: auto;
   height: auto;
-  animation-name: fadeIn;
-  animation-duration: 3s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
 }

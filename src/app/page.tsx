@@ -12,11 +12,11 @@ export default function Home() {
         <div className={styles.welcomeText}>
           <h1>
             <b>
-              Hi. My name is <span className={styles.name}>Nathan.</span>
+              Hi. I&#8217;m <span className={styles.name}>Nathan Dunn</span>.
             </b>
           </h1>
           <p>
-            Im a fullstack software engineer with experience developing and
+            A fullstack software engineer with experience developing and
             maintaining mission critical applications, serving a wide range of
             customers.
           </p>
@@ -27,6 +27,7 @@ export default function Home() {
           </div>
         </div>
         <Image
+          priority
           className={styles.profilePicture}
           src={ProfilePicture}
           alt="Profile Picture"
