@@ -1,17 +1,12 @@
 /* Global styles are defined here */
 
-@import "./colors.css";
-@import "./fonts.css";
-@import "./components.css";
-
 html,
 body {
   padding: 0px;
   margin: 0px;
-  font-size: var(--font-default);
   height: 100%;
-  background: var(--color-grey-dark);
-  color: var(--color-white);
+  scroll-behavior: smooth;
+  font-size: 1rem;
 }
 
 a {
@@ -23,28 +18,11 @@ a {
   box-sizing: border-box;
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.page-content {
-  flex: 1 1 auto;
-  padding: 16px;
-  overflow: scroll;
-  animation-name: fadeIn;
-  animation-duration: 1s;
-}
-
-.flex {
-  display: flex;
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0%;
   }
+
   100% {
     opacity: 100%;
   }

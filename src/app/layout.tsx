@@ -1,8 +1,9 @@
-import "../styles/app.css";
-
+import { ColorSchemeScript, createTheme, MantineProvider } from '@mantine/core';
 import { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import NavBar from "../components/navbar";
+
+import '@mantine/core/styles.css';
+import "../styles/app.css";
 
 export const metadata: Metadata = {
   title: "Nathan Dunn",
@@ -14,6 +15,12 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
+const theme = createTheme({
+  primaryColor: 'blue',
+});
+
+import Main from './page';
+
 export default function RootLayout({
   children,
 }: {
@@ -21,10 +28,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={roboto.className}>
+      <head>
+        <ColorSchemeScript/>
+      </head>
       <body>
         <div className="app">
-          <NavBar />
-          {children}
+          <MantineProvider theme={theme}>
+            <Main>
+              {children}
+            </Main>
+          </MantineProvider>
         </div>
       </body>
     </html>

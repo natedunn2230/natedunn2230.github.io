@@ -1,34 +1,45 @@
-.name {
-  color: var(--color-secondary);
+.header {
+    background: light-dark(rgba(255, 255, 255, 0.95), rgba(36, 36, 36, 0.95));
+    border-bottom: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    background: color-mix(in rgba, currentColor 10%, transparent);
 }
 
-.welcomeBox {
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
+.tab {
+    display: flex;
+    padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+    border-radius: var(--mantine-radius-md);
+    font-weight: 500;
+
+    &:hover {
+        background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+    }
+
+    &.selected {
+        color: var(--mantine-primary-color-5);
+    }
 }
 
-.welcomeText {
-  max-width: 500px;
-  margin-bottom: 24px;
-
-  h1 {
-    text-align: center;
-  }
+.navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
 }
 
-.buttonWrapper {
-  display: flex;
-  margin: 16px 0;
-  justify-content: center;
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.profilePicture {
-  max-width: 40%;
-  min-width: 225px;
-  width: auto;
-  height: auto;
+.headshot {
+    width: 1rem;
+    height: auto;
+    flex: .5;
+    min-width: 250px;
 }
