@@ -75,8 +75,8 @@ const Main: React.FC<HomeProps> = ({children}) => {
       padding="md"
       >
       <AppShellHeader className={styles.header}>
-        <Link href='/'>
-        <Image src={colorScheme === 'dark' ? bannerDark : bannerLight} alt="Banner image displaying website logo"/>
+        <Link href='/' onClick={opened ? toggle : undefined}>
+          <Image src={colorScheme === 'dark' ? bannerDark : bannerLight} alt="Banner image displaying website logo"/>
         </Link>
         <Group ml="md" gap={0} visibleFrom="sm">
           <div className={styles.themeToggleNav}>
@@ -98,7 +98,7 @@ const Main: React.FC<HomeProps> = ({children}) => {
             <Stack align="center" flex='1'>
               <Group gap='xs' justify='center'><Title order={1}>Hi. I am</Title><Title c='red'>Nathan.</Title></Group>
               <Text c='dimmed' size='xl' fs='italic'>
-                A fullstack software engineer with experience developing and
+                A fullstack software engineer with more than 5 years of experience developing and
                 maintaining mission critical applications serving a wide range of
                 stakeholders.
               </Text>
